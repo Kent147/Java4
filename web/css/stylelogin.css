@@ -1,0 +1,227 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body:before {
+    content: '';
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../image/background.jpg');
+    background-color: #aaaaaa;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(40px);
+}
+
+.contact-form {
+    border-radius: 5px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 380px;
+    padding: 80px 40px;
+    box-sizing: border-box;
+    background: #999;
+}
+
+.contact-form h2 {
+    margin: 0;
+    padding: 0 0 20px;
+    color: #fff;
+    text-align: justify;
+    text-transform: uppercase;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="password"] {
+    width: 100%;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.contact-form textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 20px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.avatar {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    top: calc(-140px/2);
+    left: calc(40% - 10px);
+}
+
+.contact-form p {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: #fff;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.line-footer{
+    width: 20%;
+    height: 1px;
+    background-color: red;
+}
+
+.content{
+    text-align: center;
+}
+
+.header{
+    position: absolute;
+    left: 120px;
+    top: 50px;
+}
+
+.btn-login {
+    height: 30px;
+    width: 150px;
+    color: #fff;
+    font-size: 15px;
+    background: red;
+    cursor: pointer;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.btn-login:hover {
+    opacity: 1;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.btn-register {
+    height: 30px;
+    width: 150px;
+    color: #fff;
+    font-size: 15px;
+    background: red;
+    cursor: pointer;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.btn-register:hover {
+    opacity: 1;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.asteriskField {
+    color: #f4511e;
+}
+
+#info {
+    display: none
+}
+
+
+/* Định dạng phần nội dung*/
+
+.fomrgroup {
+    width: 50%;
+    margin: auto;
+    display: block;
+    height: 50px;
+}
+
+.fomrgroup input {
+    float: right;
+    width: 70%;
+    height: 25px;
+    margin-right: 20px;
+    line-height: 50px;
+}
+
+.fomrgroup b {
+    font-size: 20px;
+}
+
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* mặc định được ẩn đi */
+    position: fixed;
+    z-index: 1;
+    /* Ưu tiên hiển thị trên cùng */
+    padding-top: 150px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+/* Modal Content */
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 70%;
+}
+
+
+/* The Close Button */
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #f4511e;
+    text-decoration: none;
+    cursor: pointer;
+}

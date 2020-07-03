@@ -1,0 +1,148 @@
+/*menu chinh*/
+
+.menu>ul>li>a:visited {
+    background: #fff;
+    color: red
+}
+
+.menu>ul>li>a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+.menu ul ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    border-radius: 3px;
+    width: 200px;
+    background-color: #CCFFCC;
+    box-shadow: 0 0 1px white;
+}
+
+.menu ul ul a {
+    line-height: 30px;
+    color: orangered;
+    text-decoration: none;
+    font-variant: small-cap;
+    font-size: larger;
+    padding: 0 10px;
+}
+
+.menu ul ul a:hover {
+    background-color: #99FF99;
+    color: #3399FF;
+}
+
+.menu>ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    border-radius: 3px;
+    background-color: orangered;
+    text-align: center;
+}
+
+.menu ul ul {
+    position: absolute;
+    display: none;
+}
+
+.menu ul ul a {
+    display: block;
+}
+
+.menu>ul>li:hover>ul {
+    display: block;
+}
+
+.menu>ul>li {
+    display: inline-block;
+    position: relative;
+}
+
+.menu>ul>li>a {
+    display: block;
+    text-decoration: none;
+    font-size: larger;
+    padding: 0 10px;
+    line-height: 40px
+}
+
+.menu>ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    background-color: #cccccc;
+    text-align: center;
+    position: fixed;
+    width: 99%;
+    height: 15%;
+}
+
+.menu-chinh{
+    position: fixed;
+    margin-left: 0%;
+    display: block;    
+    
+}
+
+.login{
+    position: absolute;
+    right: 85px;
+    top: 10px;
+}
+
+.register{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+/*menu trai*/
+.menu-trai{
+    position: absolute;
+    margin-top: 8%;
+    display: block;
+    width: 16%;
+    height: 80%;
+}
+
+.tableproduct{
+    position: absolute;
+    margin-top:8%;
+    margin-left: 16%;
+    border-collapse: collapse;
+    width: 84%;
+    text-align: center;
+}
+
+th {
+  background-color: #555;
+  color: white;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+tr:hover {background-color: #f5f5f5;}
+
+/*button*/
+.btn-action1{
+    height: 30px;
+    width: 100px;
+    color: #fff;
+    font-size: 15px;
+    background: #FF3333;
+    cursor: pointer;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.btn-action1:hover {
+    opacity: 1;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
